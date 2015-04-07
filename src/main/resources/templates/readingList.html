@@ -8,7 +8,9 @@
 <div th:unless="${#lists.isEmpty(books)}">
     <dl th:each="player : ${books}">
         <dt class="bookHeadline">
-            <span th:text="${player.description}">Title</span> by
+            <span th:text="${player.description}">Title</span>
+            <span th:text="${player.firstName}">Name</span>
+            by
 
         </dt>
         <dd class="bookDescription">
